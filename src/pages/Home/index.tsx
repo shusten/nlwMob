@@ -1,16 +1,16 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View, Text, Image, StyleSheet, ImageBackground } from 'react-native'
 
 const Home = () => {
     return (
-    <View style={styles.container}>
+    <ImageBackground source={require('../../assets/home-background.png')} style={styles.container}>
       <View style={styles.main}>
         <Image source={require('../../assets/logo.png')} />
         <Text style={styles.title}>Seu marketplace de coleta de resíduos</Text>
         <Text style={styles.description}>Ajudamos pessoas a encontrarem pontos decoleta de forma eficiente.</Text>
-
       </View>
-    </View>
+      
+    </ImageBackground>
     );
 };
 
@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       padding: 32,
+      backgroundColor: '#f0f0f5'
     },
   
     main: {
