@@ -3,8 +3,8 @@ import { BaseNavigationContainer, NavigationContainer } from '@react-navigation/
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from './pages/Home';
-import Points from './pages/Home';
-import Detail from './pages/Home';
+import Points from './pages/Points';
+import Detail from './pages/Detail';
 
 const AppStack = createStackNavigator();
 
