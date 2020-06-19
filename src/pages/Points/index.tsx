@@ -24,7 +24,15 @@ return (
     <Text style={styles.description}>Encontre no mapa um ponto de coleta</Text>
 
     <View style={styles.mapContainer}>
-        <MapView style={styles.map}/>
+        <MapView 
+        style={styles.map}
+        initialRegion={{
+          latitude: -13.0120299,
+          longitude: -38.4888113,
+          latitudeDelta: 0.014,
+          longitudeDelta: 0.014,
+        }}
+        />
     </View>
 </View>
     <View style={styles.itemsContainer} >
